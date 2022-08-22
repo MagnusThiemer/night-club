@@ -1,8 +1,10 @@
+import Hero from "../templates/Hero"
+
 const LandingPage = () => {
   return ( 
-    <>
-      <h1>Landing page</h1>
-    </>
+    <div className="min-w-full bg-black">
+      <Hero />
+    </div>
    );
 }
  
