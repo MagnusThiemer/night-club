@@ -2,6 +2,7 @@ import EventsSection from "../templates/EventsSection";
 import GallerySection from "../templates/GallerySection";
 import Hero from "../templates/Hero"
 import Nav from "../templates/Nav";
+import TestimonialsSection from "../templates/TestimonialsSection";
 import WelcomeSection from "../templates/WelcomeSection";
 
 const LandingPage = () => {
@@ -12,6 +13,7 @@ const LandingPage = () => {
       <WelcomeSection />
       <EventsSection />
       <GallerySection />
+      <TestimonialsSection />
     </div>
    );
 }
