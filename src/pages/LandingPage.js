@@ -1,4 +1,5 @@
 import EventsSection from "../templates/EventsSection";
+import GallerySection from "../templates/GallerySection";
 import Hero from "../templates/Hero"
 import Nav from "../templates/Nav";
 import WelcomeSection from "../templates/WelcomeSection";
@@ -10,6 +11,7 @@ const LandingPage = () => {
       <Nav />
       <WelcomeSection />
       <EventsSection />
+      <GallerySection />
     </div>
    );
 }
