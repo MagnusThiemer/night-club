@@ -34,7 +34,7 @@ const WelcomeSectionImage = ({img, icon, heading, text}) => {
       <img src={img} alt="" className="col-start-1 row-start-1 object-cover min-h-full"/>
       <motion.div variants={variants} whileHover='hover' initial='hidden' className="col-start-1 row-start-1 bg-black border border-t-1 border-b-1 border-y-primary border-x-black relative flex justify-center flex-col items-center md:p-12 p-8">
         {icon}
-        <motion.h3 variants={children} className='text-white font-bold uppercase text-2xl my-6 text-center' motion>{heading}</motion.h3>
+        <motion.h3 variants={children} className='text-white font-bold uppercase text-2xl my-6 text-center'>{heading}</motion.h3>
         <motion.p variants={children} className="text-white">{text}</motion.p>
         <CornerTriangle position='top-left'/>
         <CornerTriangle position='bottom-right'/>
