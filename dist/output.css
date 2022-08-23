@@ -591,12 +591,16 @@ html {
   top: 0px;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
 .z-20 {
   z-index: 20;
 }
 
-.z-10 {
-  z-index: 10;
+.z-30 {
+  z-index: 30;
 }
 
 .col-start-1 {
@@ -639,11 +643,6 @@ html {
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
-}
-
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 
 .mb-12 {
@@ -698,8 +697,28 @@ html {
   height: 5rem;
 }
 
-.h-28 {
-  height: 7rem;
+.h-full {
+  height: 100%;
+}
+
+.max-h-11 {
+  max-height: 2.75rem;
+}
+
+.max-h-80 {
+  max-height: 20rem;
+}
+
+.max-h-64 {
+  max-height: 16rem;
+}
+
+.max-h-52 {
+  max-height: 13rem;
+}
+
+.max-h-44 {
+  max-height: 11rem;
 }
 
 .min-h-full {
@@ -714,16 +733,16 @@ html {
   width: 0px;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .w-3\/5 {
   width: 60%;
 }
 
 .w-11\/12 {
   width: 91.666667%;
-}
-
-.w-full {
-  width: 100%;
 }
 
 .w-4\/5 {
@@ -738,28 +757,8 @@ html {
   width: 5rem;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
-.w-80 {
-  width: 20rem;
-}
-
-.w-40 {
-  width: 10rem;
-}
-
-.w-5\/12 {
-  width: 41.666667%;
-}
-
 .min-w-full {
   min-width: 100%;
-}
-
-.min-w-\[50\%\] {
-  min-width: 50%;
 }
 
 .translate-y-2 {
@@ -912,14 +911,14 @@ html {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 .bg-primary {
   --tw-bg-opacity: 1;
   background-color: rgb(255 42 112 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-r {
@@ -945,20 +944,20 @@ html {
   object-fit: cover;
 }
 
-.p-8 {
-  padding: 2rem;
-}
-
-.p-6 {
-  padding: 1.5rem;
-}
-
 .p-4 {
   padding: 1rem;
 }
 
 .p-2 {
   padding: 0.5rem;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .py-6 {
@@ -1027,10 +1026,6 @@ html {
   transition-duration: 150ms;
 }
 
-.duration-500 {
-  transition-duration: 500ms;
-}
-
 .duration-1000 {
   transition-duration: 1000ms;
 }
@@ -1077,16 +1072,16 @@ html {
     display: none;
   }
 
+  .md\:w-1\/2 {
+    width: 50%;
+  }
+
   .md\:w-4\/5 {
     width: 80%;
   }
 
   .md\:w-2\/5 {
     width: 40%;
-  }
-
-  .md\:w-1\/2 {
-    width: 50%;
   }
 
   .md\:flex-row {
