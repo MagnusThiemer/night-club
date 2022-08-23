@@ -2,11 +2,15 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
-    letterSpacing: {
-      wider: '.3em',
-      widest: '.6em'
-    }
+    extend: {
+      colors: {
+        primary: '#ff2a70'
+      },
+      letterSpacing: {
+        wider: '.3em',
+        widest: '.6em'
+      }
+    },
   },
   plugins: [],
 }
