@@ -17,7 +17,7 @@ const GalleryContainer = ({data}) => {
   }
   return ( 
     <Gallery>
-      <motion.div variants={variants} initial='hidden' whileInView='visible' className="flex flex-wrap justify-center">
+      <motion.div variants={variants} initial='hidden' whileInView='visible' className="overflow-x-hidden flex flex-wrap justify-center">
       {data.map((image, index) => (
         <Item
         key={index}

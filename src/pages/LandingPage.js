@@ -6,6 +6,7 @@ import MusicPlayerSection from "../templates/MusicPlayerSection";
 import Nav from "../templates/Nav";
 import SubscriptionSection from "../templates/SubscriptionSection";
 import TestimonialsSection from "../templates/TestimonialsSection";
+import VideoSection from "../templates/VideoSection";
 import WelcomeSection from "../templates/WelcomeSection";
 
 const LandingPage = () => {
@@ -17,6 +18,7 @@ const LandingPage = () => {
       <EventsSection />
       <GallerySection />
       <MusicPlayerSection />
+      <VideoSection />
       <TestimonialsSection />
       <SubscriptionSection />
       <Footer />

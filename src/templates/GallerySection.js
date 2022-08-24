@@ -10,7 +10,7 @@ const GallerySection = () => {
     .then(response => setData(response.data))
   }, [])
   return ( 
-    <section className="bg-black w-full mx-auto mb-44">
+    <section className="bg-black w-full mx-auto mb-44 overflow-x-hidden">
       <H2 text='Gallery'/>
       {data && <GalleryContainer data={data}/>}
     </section>
