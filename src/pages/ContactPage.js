@@ -1,8 +1,14 @@
+import ContactSection from "../templates/ContactSection";
+import Footer from "../templates/Footer";
+import Nav from "../templates/Nav";
+
 const ContactPage = () => {
   return ( 
-    <>
-    <h1>Contact page</h1>
-    </> 
+    <div className="min-w-full bg-black">
+      <Nav />
+      <ContactSection />
+      <Footer />
+    </div>
     );
 }
  
