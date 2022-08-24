@@ -2,6 +2,7 @@ import EventsSection from "../templates/EventsSection";
 import Footer from "../templates/Footer";
 import GallerySection from "../templates/GallerySection";
 import Hero from "../templates/Hero"
+import MusicPlayerSection from "../templates/MusicPlayerSection";
 import Nav from "../templates/Nav";
 import SubscriptionSection from "../templates/SubscriptionSection";
 import TestimonialsSection from "../templates/TestimonialsSection";
@@ -15,6 +16,7 @@ const LandingPage = () => {
       <WelcomeSection />
       <EventsSection />
       <GallerySection />
+      <MusicPlayerSection />
       <TestimonialsSection />
       <SubscriptionSection />
       <Footer />
