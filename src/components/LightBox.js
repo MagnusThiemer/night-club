@@ -1,9 +1,11 @@
-const LightBox = ({setLightBox, img, alt}) => {
-  return ( 
-    <div className="absolute bg-black h-full w-full z-30 top-0" onClick={() => setLightBox(false)}>
-      <img src={img} alt={alt} />
+
+const Lightbox = ({alt, src, setLightboxOn}) => {
+  
+  return (
+    <div className="absolute w-full h-full flex justify-center items-center z-30 bg-black bg-opacity-50" onClick={() => setLightboxOn(false)}>
+      <img src={src} alt={alt} />
     </div>
-   );
-}
- 
-export default LightBox;
+  );
+};
+
+export default Lightbox;

@@ -1,11 +1,13 @@
 import { motion } from 'framer-motion'
-import 'photoswipe/dist/photoswipe.css'
-import { Gallery, Item } from 'react-photoswipe-gallery'
+import { useState } from 'react'
+import Lightbox from './Lightbox';
+
 
 const GalleryContainer = ({data}) => {
+
   const variants = {
     hidden: {
-      x: '-1000px'
+      x: '-50vw'
     },
     visible: {
       x: 0,
@@ -15,23 +17,26 @@ const GalleryContainer = ({data}) => {
       }
     },
   }
+  const [lightboxSrc, setLightboxSrc] = useState();
+  const [lightboxAlt, setLightboxAlt] = useState()
+
+  const [lightboxOn, setLightboxOn] = useState(false)
+  const handleClick = (event) => {
+    setLightboxSrc(event.target.src);
+    setLightboxAlt(event.target.alt);
+    setLightboxOn(true)
+  }
+
   return ( 
-    <Gallery>
-      <motion.div variants={variants} initial='hidden' whileInView='visible' className="overflow-x-hidden flex flex-wrap justify-center">
-      {data.map((image, index) => (
-        <Item
-        key={index}
-        id={image.id}
-        original={image.asset.url}
-        thumbnail={image.asset.url}
-        caption={image.description}>
-        {({ ref, open }) => (
-          <img ref={ref} onClick={open} src={image.asset.url} className='max-h-44'/>
-          )}
-        </Item>
-      ))}
+    <>
+      {lightboxOn && <Lightbox src={lightboxSrc} alt={lightboxAlt} setLightboxOn={setLightboxOn}/>}
+      <motion.div variants={variants} initial='hidden' whileInView='visible' className='overflow-x-hidden flex flex-row flex-wrap justify-center'>
+        {data && data.map((image, index) => (
+          <img src={image.asset.url} alt={image.description} key={index} className='max-h-[200px]' onClick={(event) => handleClick(event)}/>
+        ))}
       </motion.div>
-    </Gallery>
+      
+    </>
    );
 }
  
