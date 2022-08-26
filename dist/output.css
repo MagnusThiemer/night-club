@@ -981,6 +981,17 @@ html {
   border-right-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
+.border-y-transparent {
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+}
+
+.border-x-primary {
+  --tw-border-opacity: 1;
+  border-left-color: rgb(255 42 112 / var(--tw-border-opacity));
+  border-right-color: rgb(255 42 112 / var(--tw-border-opacity));
+}
+
 .border-l-transparent {
   border-left-color: transparent;
 }
