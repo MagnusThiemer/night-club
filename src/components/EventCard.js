@@ -4,7 +4,7 @@ const EventCard = ({eventData}) => {
       <img src={eventData.asset.url} alt="" className="object-cover min-w-full"/>
       <div className="bg-primary w-full z-10 p-2">
         <p className="text-white">
-          <span>{eventData.date} </span>
+          <span className="mr-12">{eventData.date.split('T')[0]} </span>
           <span>{eventData.location}</span>
         </p>
       </div>
