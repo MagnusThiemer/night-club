@@ -6,7 +6,7 @@ const SongSelection = ({songs, audio, setAudio}) => {
       {audio && songs.map((item, index) => 
         <div key={index} className='max-w-full h-auto w-auto relative ' id={`song${index}`} onClick={() => {setAudio(songs[index])}}>
           <img src={item.thumb} alt="" className=""/>
-          {audio.thumb == item.thumb && 
+          {audio.thumb === item.thumb && 
             <>
                 <CornerTriangle position='top-left'/>
                 <CornerTriangle position='bottom-right'/>

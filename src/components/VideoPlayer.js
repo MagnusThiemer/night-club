@@ -1,10 +1,7 @@
 
 import video from '../assets/media/space.mp4'
 import CornerTriangle from './CornerTriangle';
-
-import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
 import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
-import { ImLocation, ImMobile } from "react-icons/im";
 
 const VideoPlayer = () => {
 

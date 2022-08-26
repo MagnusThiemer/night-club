@@ -50,16 +50,8 @@ const GalleryContainer = ({data}) => {
 
   const [lightboxSrc, setLightboxSrc] = useState();
   const [lightboxAlt, setLightboxAlt] = useState()
-  const [hover, setHover] = useState();
-
-  const handleToggle = (e) => {
-    if(e.target.nextElementSibling){
-      e.target.nextElementSibling.classList.toggle('opacity-1')
-      e.target.nextElementSibling.classList.toggle('opacity-0')
-    }
-  }
-
   const [lightboxOn, setLightboxOn] = useState(false)
+  
   const handleClick = (event) => {
     setLightboxSrc(event.target.parentNode.parentNode.querySelector('img').src);
     setLightboxAlt(event.target.parentNode.parentNode.querySelector('img').alt);

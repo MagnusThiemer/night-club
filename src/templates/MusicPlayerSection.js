@@ -1,5 +1,5 @@
 import H2 from "../components/H2";
-import { useEffect, useState, useContext, useRef } from 'react';
+import { useState } from 'react';
 import MusicPlayer from "../components/MusicPlayer";
 import Music from '../assets/media/YouBelongWithMe.mp3'
 import track1 from '../assets/content-img/track1.jpg'

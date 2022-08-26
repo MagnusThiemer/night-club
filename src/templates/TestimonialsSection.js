@@ -17,7 +17,7 @@ const TestimonialsSection = () => {
         <div 
           id={key}
           key={key} 
-          className={`h-4 w-4 ${index == key ? 'bg-primary' : 'bg-white'}`}
+          className={`h-4 w-4 ${index === key ? 'bg-primary' : 'bg-white'}`}
           onClick={() => {setIndex(key)}}
           ></div>))}
       </div>
